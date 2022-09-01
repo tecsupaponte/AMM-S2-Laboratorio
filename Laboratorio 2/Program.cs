@@ -32,8 +32,8 @@ namespace Laboratorio_2
             double area = new Rectangle(vertice1, vertice2, vertice3).getArea();
             double perimeter = new Rectangle(vertice1, vertice2, vertice3).getPerimeter();
 
-            Console.WriteLine("Area: " + area);
-            Console.WriteLine("Perimetro: " + perimeter);
+            Console.WriteLine("Área: " + area);
+            Console.WriteLine("Perímetro: " + perimeter);
 
         }
     }
