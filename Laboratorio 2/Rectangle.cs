@@ -8,12 +8,15 @@ namespace Laboratorio_2
         private Vertice vertice2 { get; set; }
         private Vertice vertice3 { get; set; }
 
-        public Rectangle(Vertice vertice1, Vertice vertice2, Vertice vertice3)
+        private Vertice vertice4 { get; set; }
+
+        public Rectangle(Vertice vertice1, Vertice vertice2, Vertice vertice3, Vertice vertice4)
         {
             this.vertice1 = vertice1;
             this.vertice2 = vertice2;
             this.vertice3 = vertice3;
-        }   
+            this.vertice4 = vertice4;
+        }
 
         private double getWidth()
         {
@@ -31,7 +34,7 @@ namespace Laboratorio_2
 
         public double getPerimeter()
         {
-            return 2* (getWidth() + getHeight());
+            return 2 * (getWidth() + getHeight());
         }
     }
 }

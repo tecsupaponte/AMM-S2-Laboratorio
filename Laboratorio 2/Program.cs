@@ -13,6 +13,7 @@ namespace Laboratorio_2
             Vertice vertice1 = new Vertice();
             Vertice vertice2 = new Vertice();
             Vertice vertice3 = new Vertice();
+            Vertice vertice4 = new Vertice();
 
             Console.WriteLine("Ingresar las coordenas del rectangulo:");
 
@@ -28,12 +29,16 @@ namespace Laboratorio_2
             vertice3.x = int.Parse((Console.ReadLine()));
             Console.Write("y3: ");
             vertice3.y = int.Parse((Console.ReadLine()));
+            Console.Write("x4: ");
+            vertice4.x = int.Parse((Console.ReadLine()));
+            Console.Write("y4: ");
+            vertice4.y = int.Parse((Console.ReadLine()));
 
-            double area = new Rectangle(vertice1, vertice2, vertice3).getArea();
-            double perimeter = new Rectangle(vertice1, vertice2, vertice3).getPerimeter();
+            double area = new Rectangle(vertice1, vertice2, vertice3, vertice4).getArea();
+            double perimeter = new Rectangle(vertice1, vertice2, vertice3, vertice4).getPerimeter();
 
-            Console.WriteLine("Área: " + area);
-            Console.WriteLine("Perímetro: " + perimeter);
+            Console.WriteLine($"Área: {area} cm^2 ");
+            Console.WriteLine($"Perímetro: {perimeter} cm");
 
         }
     }
